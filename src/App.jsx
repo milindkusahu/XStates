@@ -116,13 +116,10 @@ const App = () => {
           ))}
         </select>
 
-        {selectedCountry && (
-          <div className="mt-4">
-            <p>
-              {selectedCity &&
-                `You Selected ${selectedCity}, ${selectedState}, ${selectedCountry}`}
-            </p>
-          </div>
+        {selectedCity && selectedState && selectedCountry && (
+          <p>
+            You selected {selectedCity}, {selectedState}, {selectedCountry}
+          </p>
         )}
       </div>
     </div>
